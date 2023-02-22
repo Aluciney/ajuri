@@ -61,7 +61,7 @@ export interface UnidadeConsumidora {
 }
 
 export interface UsuarioWeb {
-	CLIE_NUMERO_DOCTO_number;
+	CLIE_NUMERO_DOCTO: number;
 	UWEB_SENHA: string;
 	UWEB_DT_SENHA: string;
 	UWEB_E_MAIL: string;
@@ -326,8 +326,8 @@ export interface FaturaCadastro {
 	FTCD_ORDENADA_POSTE: string;
 	FTCD_NUMERO_PLANTA: number;
 	FTCD_NUMERO_POSTE: number;
-	FTCD_TIPO_DOCTO_number;
-	FTCD_NUMERO_DOCTO_number;
+	FTCD_TIPO_DOCTO: number;
+	FTCD_NUMERO_DOCTO: number;
 	FTCD_TIPO_DOCTO_2: string;
 	FTCD_NUMERO_DOCTO_2: string;
 	FTCD_VALOR_RETENCAO: number; 
