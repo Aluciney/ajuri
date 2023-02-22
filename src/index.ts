@@ -60,7 +60,7 @@ export interface UnidadeConsumidora {
 	TENS_CLASSIFICACAO: 'BT' | 'MT' | 'AT';
 }
 
-export interface USUARIO_WEB {
+export interface UsuarioWeb {
 	CLIE_NUMERO_DOCTO_number;
 	UWEB_SENHA: string;
 	UWEB_DT_SENHA: string;
@@ -72,12 +72,7 @@ export interface USUARIO_WEB {
 	UWEB_CODIGO_ATIVACAO: string;
 }
 
-export interface USUARIO_WEB_LOGIN extends USUARIO_WEB {
-	CLIE_NOME_CLIENTE: string;
-	CLIE_NOME_FANTASIA: string;
-}
-
-export interface CLIENTE {
+export interface Cliente {
 	CLIE_NUMERO_DOCTO_1: string;
 	CLIE_IDENT_CLIENTE: number;
 	CLIE_NOME_CLIENTE: string;
@@ -174,7 +169,7 @@ export interface OrdemServico {
 	OSER_ALTERA_REG: number;
 }
 
-export interface POTENCIA_EQUIPAMENTO {
+export interface PotenciaEquipamento {
 	POEQ_COD_EQUIPTO: number;
 	POEQ_DESCR_EQUIPTO: string;
 	POEQ_POTENCIA_EQUIPTO: number;
@@ -275,29 +270,6 @@ export interface FaturaAgrupada {
 	SEGV_QTDE_FATURA: number,
 	CODIGO_BARRAS: string;
 	NOME_CLIENTE: string;
-}
-
-export interface AUTENTICACAO {
-	ID: number;
-	NUM_DOC: string;
-	EMAIL: string;
-	CODE: string;
-	TIPO: string;
-	TS: Date;
-}
-
-export interface USUARIO {
-	NUM_DOCTO: number;
-	EMAIL: string;
-	NOME: string;
-	SENHA: string;
-}
-
-export interface TENTATIVA {
-	TS: Date;
-	NUM_DOCTO: string;
-	QTD: number;
-	TIPO: string;
 }
 
 export interface FaturaCadastro {
@@ -465,7 +437,7 @@ export interface LeituraSMC {
 	DATA_INSERCAO: Date;
 }
 
-export interface TAXA {
+export interface Taxa {
 	TAXA_DT_INI_VIG_TAXA: Date;
 	TAXA_DT_FIM_VIG_TAXA: Date;
 	EDEV_COD_ENC_DEV: number;
@@ -499,7 +471,7 @@ export interface Lancamento {
 	LANC_OBSERVACOES: string;
 }
 
-export interface Encargo_Devolucao {
+export interface EncargoDevolucao {
 	TENC_TIPO_ENC_DEV: number;
 	EDEV_COD_ENC_DEV: number;
 	EDEV_DESCR_RESUM_ENC_DEV: string;
